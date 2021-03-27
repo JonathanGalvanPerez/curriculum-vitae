@@ -3,34 +3,18 @@ body {
 	background-color: black;
 }
 .container {
-	width: 63%;
-	margin: 0 auto;
-	padding: 20px;
 	background-color: white;
 }
 section {
 	display: flex;
-	margin-bottom: 15px;
+	flex-wrap: wrap;
 }
-.datos {
-	width: 40%;
-	margin: 0 15px;
-}
-.izq {
-	text-align: right;
-}
-.columna.izq {
-	border-right: 1px solid blue;
-}
-.der {
-	text-align: left;
-}
-.columna.der {
-	border-left: 1px solid blue;
+section div {
+	margin-bottom: 20px;
 }
 .foto {
+	padding: 0;
 	text-align: center;
-	width:20%;
 }
 h2 {
 	margin-top: 0;
@@ -41,18 +25,40 @@ h2 {
 	font-weight: 400;
 	padding: 20px;
 }
-.columna {
-	width: 40%;
+.bottom div {
 	padding: 0 30px;
-	margin: 0 10px 15px;
+	margin-bottom: 20px;
 }
-.columna p {
+.bottom div:nth-child(odd) {
+	text-align: right;
+}
+.bottom div:nth-child(odd):before {
+	content: "";
+	position: absolute;
+	top: 5%;
+	right: 5px;
+	width: 2px;
+	height: 90%;
+	background-color: blue;
+}
+.bottom div:nth-child(even) {
+	text-align: left;
+}
+.bottom div:nth-child(even):before {
+	content: "";
+	position: absolute;
+	top: 5%;
+	left: 5px;
+	width: 2px;
+	height: 90%;
+	background-color: blue;
+}
+.bottom div p {
 	margin: 10px 0 0;
 }
 ul {
 	padding: 0;
 	font-family: "Lexend";
-	font-weight: 
 }
 li {
 	list-style: none;
