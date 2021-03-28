@@ -1,9 +1,10 @@
 body {
 	font-family: "Raleway";
-	background-color: black;
+	background-image: url('fondo.png');
 }
 .container {
 	background-color: white;
+	padding: 0 15px 15px;
 }
 section {
 	display: flex;
@@ -78,4 +79,11 @@ li p {
 .icon {
 	font-size: 30px;
 	color: blue;
+}
+.repo {
+	width: 100%;
+}
+.download {
+	display: block;
+	margin: 0 auto;
 }
